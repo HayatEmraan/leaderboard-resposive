@@ -2,8 +2,39 @@
 
 body{
     background: #F3F1FF;
+    margin: 0;
 }
-main{
+.navigation-container{
+    display: flex;
+    color: #FFFFFF;
+    background: #562EFF;
+    justify-content: space-around;
+}
+.nav-logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+.nav-logo p{
+    font-size: 24px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 0 36px;
+}
+.nav-menu ul li{
+    list-style: none;
+}
+.nav-menu ul li img{
+    height: 51px;
+    width: 51px;
+}
+main, .latest-courses-container{
     background-color: #fff;
     width: 870px;
     border-radius: 5px;
@@ -12,11 +43,21 @@ main{
 .top-players-container{
     padding: 30px;
 }
-.top-players-container h2{
+.top-players-container h2,  .top-blogs h3, .latest-courses-container h3{
     font-size: 24px;
     margin: 0;
     margin-bottom: 40px;
     color: #562EFF;
+}
+.latest-courses-container h3{
+    padding: 23px 0 24px;
+    margin: 0;
+}
+.latest-courses-container{
+    padding-left: 39px;
+}
+.top-blogs h3{
+    margin: 31px 0;
 }
 .top-player{
     display: grid;
@@ -41,4 +82,65 @@ main{
 hr{
     margin: 0;
     border: 1px solid #D1D1D1;
+}
+/* blog section  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px 0;
+}
+.blog-content img{
+    width: 177px;
+    height: 117px;
+}
+.blog-main-content{
+    margin-left: 16px;
+}
+.blog-main-content span{
+    color: #562EFF;
+}
+.blog-content{
+    display: flex;
+}
+/* latest courses  */
+.main-course{
+    box-shadow: (0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+.latest-courses-container{
+    margin-top: 21px;
+}
+.main-course img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star{
+    color: #FFC014;
+}
+.fa-half{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+.duration{
+    font-weight: 600;
+    font-size: 14.6913px;
+    color: #FF4A60;
+    background: #FFE4E8;
+    padding: 2px 5px;
+    border-radius: 14.6913px;
+}
+.all-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:39px;
+}
+.course-rating-container{
+    gap: 0 10px;
+}
+.duration-rating{
+    display: flex;
+    gap: 0 10px;
+}
+.course-rating-container{
+    display: flex;
+    align-items: center;
 }
