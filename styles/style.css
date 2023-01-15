@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+body{
+    background: #F3F1FF;
+}
+main{
+    background-color: #fff;
+    width: 870px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.top-players-container{
+    padding: 30px;
+}
+.top-players-container h2{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.player-container{
+    display: flex;
+    margin-bottom: 29px;
+    align-items: center;
+
+}
+.player-container h3{
+    margin-left: 16px;
+}
+.player-container h3 img{
+    line-height: 29px;
+}
+.player-container img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+    margin: 0;
+    border: 1px solid #D1D1D1;
+}
